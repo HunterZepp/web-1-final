@@ -1,0 +1,358 @@
+/*Mobile*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+body {
+  background-color: #3d433d;
+  margin: 0;
+  min-width: 360px;
+}
+nav {
+  height: 80px;
+  background-color: #0e430a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#tagline-parallax {
+  background-image: url("https://assets.codepen.io/8906220/HZepp_Portfolio.jpg");
+  height: 140px;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 265px;
+  margin: auto;
+}
+#section-button-container {
+  height: 80px;
+  background-color: #0e430a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+#section-button-container a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
+  width: 100px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  transition: all 125ms ease-in-out;
+}
+#section-button-container a:hover {
+  border: 5px solid #64ff00;
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 30px;
+}
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  row-gap: 30px;
+}
+.project {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project a img {
+  width: 100%;
+  height: 146px;
+  object-fit: cover;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
+  transition: all 125ms ease-in-out;
+}
+.project a img:hover {
+  border: 5px solid #64ff00;
+}
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: -2px;
+}
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+#about-parallax {
+  background-image: url("https://assets.codepen.io/8906220/HZepp_About.jpg");
+  height: 140px;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 30px;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about p {
+  width: 260px;
+}
+span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+#services-offered {
+  width: 260px;
+}
+footer {
+  height: 80px;
+  background-color: #0e430a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 0px -3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all 125ms ease-in-out;
+}
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: #64ff00;
+  text-decoration-thickness: 3px;
+}
+
+/*Tablet*/
+@media (min-width: 960px) and (max-width: 1280px) {
+  nav {
+    height: 120px;
+  }
+  svg {
+    scale: 1.5;
+  }
+  #tagline-parallax {
+    height: 360px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+    width: 395px;
+  }
+  #section-button-container {
+    height: 120px;
+  }
+  #section-button-container a {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 25px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+    margin: 60px;
+  }
+  #projects-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 760px;
+    column-gap: 60px;
+    margin: auto;
+  }
+  .project {
+    width: 350px;
+  }
+  .project a img {
+    height: 196px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: -4px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #about-parallax {
+    height: 360px;
+    margin-top: 60px;
+  }
+  #about h2 {
+    margin-bottom: 40px;
+  }
+  #about p {
+    width: 650px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #services-offered {
+    width: 650px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #services {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: space-around;
+  }
+  footer {
+    height: 120px;
+    margin-top: 60px;
+  }
+  footer a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1280px) {
+  nav {
+    height: 160px;
+  }
+  svg {
+    scale: 2;
+  }
+  #tagline-parallax {
+    height: 550px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 72px;
+    width: 530px;
+  }
+  #section-button-container {
+    height: 160px;
+  }
+  #section-button-container a {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 40px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 54px;
+    margin: 80px;
+  }
+  #projects-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 1360px;
+    column-gap: 120px;
+    row-gap: 60px;
+    margin: auto;
+  }
+  .project {
+    width: 620px;
+  }
+  .project a img {
+    height: 347px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: -4px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #about-parallax {
+    height: 600px;
+    margin-top: 80px;
+  }
+  #about h2 {
+    margin-bottom: 40px;
+  }
+  #about p {
+    width: 800px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  #services-offered {
+    width: 800px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #services {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-around;
+  }
+  footer {
+    height: 160px;
+    margin-top: 60px;
+  }
+  footer a{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
